@@ -1,3 +1,5 @@
+# This script zooms all the way in with the camera.
+
 import socket
 
 IPADDR1 = '192.168.8.99'
