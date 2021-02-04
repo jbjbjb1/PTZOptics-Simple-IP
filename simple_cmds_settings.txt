@@ -1,0 +1,7 @@
+{
+"IPADDR": "192.168.8.99",
+"PORTNUM": 1259,
+"zoompreacher": 18,
+"zoomstage": 10,
+"zoomout": 0
+}

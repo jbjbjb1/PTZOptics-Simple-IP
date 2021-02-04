@@ -3,18 +3,15 @@
 import socket
 
 # Camera settings
-IPADDR1 = '192.168.8.99'
+IPADDR = '192.168.8.99'
 PORTNUM = 1259
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, 0)
-s.connect((IPADDR1, PORTNUM))
+s.connect((IPADDR, PORTNUM))
 
 # Commands
-COMMAND1 = '8101040702FF'       # zooms all the way in
-
 def COMMAND2(zoom_code):
     ''' Zooms to a pre-defined locations. '''
-    #command_template = '81010447pqrsFF'
     command_template = '81 01 04 47 0p 0q 0r 0s FF'
     p = zoom_code[0]
     q = zoom_code[1]
