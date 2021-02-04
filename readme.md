@@ -12,6 +12,6 @@ Not ready for use, currently in development.
 
 ## How to test (Ubuntu)
 * Install git on Ubuntu by `sudo apt install git`
-* Clone repository by `git clone https://github.com/jbjbjb1/PTZOptics-Simple-IP.git`
+* Clone repository by `git clone https://github.com/jbjbjb1/PTZOptics-Simple-IP.git` (you may need to remove the directory if it's already there and you are updating the code by `rm -rf PTZOptics-Simple-IP`)
 * Start venv by `source env-cam/bin/activate`
-* Run the python script by `python3 PTZOptics-Simple-IP/zoom-in-fully.py`
+* Run the python script by `python3 PTZOptics-Simple-IP/zoom-command.py` or `python3 PTZOptics-Simple-IP/zoom-in-fully.py`

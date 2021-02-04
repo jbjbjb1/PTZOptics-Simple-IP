@@ -21,8 +21,8 @@ def COMMAND2(zoom_code):
     s = zoom_code[3]
     command = command_template.replace('p', p)
     command = command.replace('q', q)
-    command = command.replace('q', r)
-    command = command.replace('q', s)
+    command = command.replace('r', r)
+    command = command.replace('s', s)
 
     return command
 
@@ -33,10 +33,10 @@ while True:
     zoom = float(input('What is the desired zoome level (0 to 20)?'))
     zoom_val = 1770 * (zoom/20)
     zoom_code = str(int(zoom_val)).zfill(4)
-    print(f'Zoom code for {zoom} of zoom val {zoom_val} is {zoom_code} will be sent.')
+    print(f'Zoom code for {zoom} of zoom val {zoom_val} is {zoom_code} will be sent by {COMMAND2(zoom_code)}.')
 
     data = bytes.fromhex(COMMAND2(zoom_code))
 
-    #s.send(data)
+    s.send(data)
 
     s.close()
