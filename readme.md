@@ -2,10 +2,11 @@
 This app controls the TPZOptics camera zoom positions to three positions: zoom in, zoom stage, zoom out.
 
 ## How to use
-Not ready for use, currently in development.
+Run the .exe file (dist\simple_gui.exe) and click the buttons to zoom the camera as required! To change settings, copy the settings file (simple_cmds_settings.txt) in to the same folder as the .exe file and re-run the program.
 
 ## Improvements
-* Have a settings file with IP, port, zoom levels
+* Add a preview to the GUI of the camera (2 sec refresh rate)
+* Add a "connected status" to the GUI with advice if needing to troubleshoot
 
 ## Background
 * zoom-in-fully.py -> is working (based off below link) 
@@ -24,5 +25,8 @@ PyInstaller is used to bundle the script into a .exe file.
 ## How to test (Ubuntu)
 * Install git on Ubuntu by `sudo apt install git`
 * Clone repository by `git clone https://github.com/jbjbjb1/PTZOptics-Simple-IP.git` (you may need to remove the directory if it's already there and you are updating the code by `rm -rf PTZOptics-Simple-IP`)
-* Start venv by `source env-cam/bin/activate` (may be superceded by pipenv shell)
-* Run the python script by `python3 PTZOptics-Simple-IP/zoom_command.py` or `python3 PTZOptics-Simple-IP/zoom_in_fully.py`
+* Start venv by `source env-cam/bin/activate` (may be superceded by pipenv shell), then move into `cd PTZOptics-Simple-IP`
+* Run the python script by `python3 simple_gui.py` (or other python files)
+
+## Issues
+* Can not get pipenv working in Ubuntu, resorted back it venv
